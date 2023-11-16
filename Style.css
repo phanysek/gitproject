@@ -1,0 +1,284 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /*Font EN*/
+    font-family: 'Content', cursive;
+    /*Font KH*/
+    font-family: 'Roboto Condensed', sans-serif;
+}
+:root{
+    --background-color:#1A1A1A;
+    --Navbar-color:#232323;
+    --bg-text-color:#D60303;
+    --bg-tital-color:#FED700;
+}
+/*labtop*/
+@media (min-width:992px){
+    .big_box{
+        width: 100%;
+        height: 2700px;
+        background-color: var(--background-color);
+        float: left;
+    }
+    /*Navbar*/
+    .box_navbar{
+        width: 100%;
+        height: 70px;
+        background-color: var(--Navbar-color);
+    }
+    .box_navbar .navbar{
+        width: 82%;
+        height: 100%;
+        margin: 0 auto;
+        display: flex;
+    }
+    .box_navbar .navbar .box_logo{
+        width: 16%;
+        height: 100%;
+    }
+    .box_navbar .navbar .box_logo img{
+        width: 90%;
+        height: 100%;
+    
+    }
+    .box_navbar .navbar .box_menu{
+        width: 64%;
+        height: 100%;
+        display: flex;
+        justify-content: left;
+        align-items: center;
+        padding-left: 10px;
+        padding-top: 18px;
+    }
+    .box_navbar .navbar .box_menu a{
+       text-decoration: none;
+       color: #DDDDDD;
+       font-size: 14px;
+       font-weight: 550;
+    }
+    .box_navbar .navbar .box_menu a:hover{
+        color: #D60303;
+    }
+    .box_navbar .navbar .box_menu li{
+        list-style: none;
+    }
+    .box_navbar .navbar .box_search{
+        width: 20%;
+        height: 100%;
+    }
+    
+    .search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+      }
+      
+      .search__input {
+        font-family: inherit;
+        font-size: inherit;
+        background-color: #444444;
+        border: none;
+        color: #949494;
+        padding: 0.7rem 1rem;
+        border-radius: 10px;
+        width: 16em;
+        height: 2em;
+        transition: all ease-in-out .5s;
+        margin-top: 1em;
+        position: absolute;
+      }
+      
+      .search__input:hover, .search__input:focus {
+        box-shadow: 0 0 1em #00000013;
+      }
+      
+      .search__input:focus {
+        outline: none;
+        background-color: #f0eeee;
+      }
+      
+      .search__input::-webkit-input-placeholder {
+        font-weight: 100;
+        color: #ccc;
+      }
+      
+      .search__input:focus {
+        background-color: #f0eeee;
+      }
+      .search i{
+        position: relative;
+        color: #D60303;
+        margin-left: 220px;
+        margin-top: 16px;
+        cursor: pointer;
+      }
+    /*Navbar*/
+    
+    /*Content*/
+    .content {
+        width: 82%;
+        height: 100vh;
+        margin: 0 auto;
+    }
+    .content .box_gif{
+        width: 100%;
+        height: 226px;
+        background-color: #D60303;
+    }
+    .content .box_gif img{
+        width: 100%;
+    }
+    .content .box_titale{
+        width: 100%;
+        height: 60px;
+        background-color: #ccc;
+        margin-top: 20px;
+    }
+    .col-2 .card {
+        width: 100%;
+        height: 92%;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        border-radius: 10px;
+        cursor: pointer;
+        transition: all 0.3s;
+        position: relative;
+    }
+    .col-2 .card .fa-play{
+        position: absolute;
+        top: 40%;
+        left: 40%;
+        color: white;
+        font-size: 50px;
+        z-index: 3;
+        display: none;
+        transition: all 0.3s; 
+    }
+    .col-2 .card .fa-circle{
+        position: absolute;
+        top: 35%;
+        left: 27%;
+        color: #D60303;
+        font-size: 80px;
+        z-index: 2;
+        display: none;
+        transition: all 0.3s;
+    }
+    .col-2 .card .opacity{
+        width: 100%;
+        height: 100%;
+        background-color: #1a1a1a91;
+        position: absolute;
+        z-index: 1;
+        border-radius: 10px;
+        display: none;
+        transition: all 0.3s;
+    }
+    .col-2 .card .title{
+        width: 100%;
+        height: 20%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 5px;
+        text-align: center;
+    }
+    .col-2 .card .title p{
+        color: aliceblue;
+        font-size: 16px;
+    }
+    .col-2 .card:hover{
+        transform: scale(1.04);
+        outline: 5px solid #D60303;
+    }
+    .col-2 .card:hover .fa-play{
+        display: block;
+    }
+    .col-2 .card:hover .fa-circle{
+        display: block;
+    }
+    .col-2 .card:hover .opacity{
+        display: block;
+    }
+    .col-2 .card img{
+        width: 100%;
+        border-radius: 10px;
+    }
+
+    /*Footer*/
+    .box_footer{
+        width: 100%;
+        height: 400px;
+        background-color: #D60303;
+        margin-top: 90px;
+        display: flex;
+    }
+    .box_footer .box_left{
+        width: 20%;
+        height: 100%;
+        background-color: var(--background-color);
+    }
+    .box_footer .box_left h6{
+        color: white;
+        margin-bottom: 15px;
+        font-family: 'Roboto Condensed', sans-serif;
+    }
+    .box_footer .box_left p{
+        font-family: 'Roboto Condensed', sans-serif;
+        color: white;
+        margin-top: -12px;
+    }
+    .box_footer .box_left p:hover{
+        color: #D60303;
+        cursor: pointer;
+    }
+    .box_footer .box_center{
+        width: 50%;
+        height: 100%;
+        background-color: var(--background-color);
+        padding-left: 150px;
+    }
+    .box_footer .box_center h6{
+        color: white;
+        font-size: 20px;
+    }
+    .box_footer .box_center p{
+        color: white;
+    }
+    .box_footer .box_center i{
+        color: white;
+    }
+    .box_footer .box_center i:hover{
+        color:#D60303;
+    }
+    .box_footer .box_right{
+        width: 30%;
+        height: 100%;
+        background-color: var(--background-color);
+    }
+    .box_footer .box_right .box_logo{
+        width: 100%;
+        height: 150px;
+        float: left;
+    }
+    .box_footer .box_right .box_logo img{
+        width: 100%;
+        height: 100%;
+        object-fit:fill;
+    }
+    .box_footer .box_right .box_title{
+        width: 100%;
+        height: 50%;
+        float: left;
+    }
+    .box_footer .box_right .box_title h6{
+        color: white;
+    }
+    .box_footer .box_right .box_title p{
+        color: white;
+        font-size: 10px;
+    }
+    /*Footer*/
+    /*Content*/ 
+}
